@@ -15,8 +15,6 @@
 		04691A711D50C636003A9B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04691A6F1D50C636003A9B50 /* LaunchScreen.storyboard */; };
 		04691A7C1D50C636003A9B50 /* iOS_____01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04691A7B1D50C636003A9B50 /* iOS_____01Tests.m */; };
 		04691A871D50C636003A9B50 /* iOS_____01UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04691A861D50C636003A9B50 /* iOS_____01UITests.m */; };
-		04691A961D50D11B003A9B50 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 04691A951D50D11B003A9B50 /* UIImage+ImageEffects.m */; };
-		04691A991D50E1E1003A9B50 /* XTMasonryViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04691A981D50E1E1003A9B50 /* XTMasonryViewLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +51,6 @@
 		04691A821D50C636003A9B50 /* iOS编程实战_01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS编程实战_01UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04691A861D50C636003A9B50 /* iOS_____01UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "iOS_____01UITests.m"; sourceTree = "<group>"; };
 		04691A881D50C636003A9B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04691A941D50D11B003A9B50 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		04691A951D50D11B003A9B50 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		04691A971D50E1E1003A9B50 /* XTMasonryViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTMasonryViewLayout.h; sourceTree = "<group>"; };
-		04691A981D50E1E1003A9B50 /* XTMasonryViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTMasonryViewLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +105,6 @@
 				04691A651D50C636003A9B50 /* AppDelegate.m */,
 				04691A671D50C636003A9B50 /* ViewController.h */,
 				04691A681D50C636003A9B50 /* ViewController.m */,
-				04691A971D50E1E1003A9B50 /* XTMasonryViewLayout.h */,
-				04691A981D50E1E1003A9B50 /* XTMasonryViewLayout.m */,
-				04691A941D50D11B003A9B50 /* UIImage+ImageEffects.h */,
-				04691A951D50D11B003A9B50 /* UIImage+ImageEffects.m */,
 				04691A6A1D50C636003A9B50 /* Main.storyboard */,
 				04691A6D1D50C636003A9B50 /* Assets.xcassets */,
 				04691A6F1D50C636003A9B50 /* LaunchScreen.storyboard */,
@@ -280,10 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04691A961D50D11B003A9B50 /* UIImage+ImageEffects.m in Sources */,
 				04691A691D50C636003A9B50 /* ViewController.m in Sources */,
 				04691A661D50C636003A9B50 /* AppDelegate.m in Sources */,
-				04691A991D50E1E1003A9B50 /* XTMasonryViewLayout.m in Sources */,
 				04691A631D50C636003A9B50 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +498,7 @@
 				04691A8D1D50C636003A9B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04691A8E1D50C636003A9B50 /* Build configuration list for PBXNativeTarget "iOS编程实战_01Tests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +507,7 @@
 				04691A901D50C636003A9B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04691A911D50C636003A9B50 /* Build configuration list for PBXNativeTarget "iOS编程实战_01UITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +516,7 @@
 				04691A931D50C636003A9B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

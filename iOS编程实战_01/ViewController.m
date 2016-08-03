@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UIViewControllerTransitioningDelegate>
+
 @property (nonatomic, strong) CALayer *topLayer;
 
 @property (nonatomic, strong) CALayer *bottomLayer;
@@ -124,9 +125,14 @@ static CATransform3D MakePerspectiveTransform()
     contentLayer.transform = CATransform3DMakeTranslation(size.width / 2, size.height / 2, 0);
     [self.view.layer addSublayer:contentLayer];
     
-    self.topLayer = [self layerx:0 y:-50 z:0 color:[UIColor cyanColor] transform:MakeSideRoration(1,0,0)];
+    
     
 }
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+{
+    return self;
+}
+- 
 - (void)pan:(UIPanGestureRecognizer *)rec
 {
     NSLog(@"----------------");
