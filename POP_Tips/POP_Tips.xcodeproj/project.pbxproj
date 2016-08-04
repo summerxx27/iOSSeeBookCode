@@ -20,8 +20,8 @@
 		BC73FDC31D4AF5B700EA9503 /* XTPopingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC73FDC21D4AF5B700EA9503 /* XTPopingView.m */; };
 		BC73FDC51D4B0F9E00EA9503 /* chenyao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC73FDC41D4B0F9E00EA9503 /* chenyao.jpg */; };
 		BC73FDC71D4B178F00EA9503 /* chenyao2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC73FDC61D4B178F00EA9503 /* chenyao2.jpg */; };
-		BC7BBF2C1D51E3E0008D0C58 /* DismissingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7BBF291D51E3E0008D0C58 /* DismissingAnimator.m */; };
-		BC7BBF2D1D51E3E0008D0C58 /* PresentingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7BBF2B1D51E3E0008D0C58 /* PresentingAnimator.m */; };
+		BC7BBF2C1D51E3E0008D0C58 /* DismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7BBF291D51E3E0008D0C58 /* DismissAnimator.m */; };
+		BC7BBF2D1D51E3E0008D0C58 /* PresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7BBF2B1D51E3E0008D0C58 /* PresentAnimator.m */; };
 		BC7BBF301D51E797008D0C58 /* SwipeUpInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7BBF2F1D51E797008D0C58 /* SwipeUpInteractiveTransition.m */; };
 /* End PBXBuildFile section */
 
@@ -67,10 +67,10 @@
 		BC73FDC21D4AF5B700EA9503 /* XTPopingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPopingView.m; sourceTree = "<group>"; };
 		BC73FDC41D4B0F9E00EA9503 /* chenyao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chenyao.jpg; sourceTree = "<group>"; };
 		BC73FDC61D4B178F00EA9503 /* chenyao2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chenyao2.jpg; sourceTree = "<group>"; };
-		BC7BBF281D51E3E0008D0C58 /* DismissingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissingAnimator.h; sourceTree = "<group>"; };
-		BC7BBF291D51E3E0008D0C58 /* DismissingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissingAnimator.m; sourceTree = "<group>"; };
-		BC7BBF2A1D51E3E0008D0C58 /* PresentingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentingAnimator.h; sourceTree = "<group>"; };
-		BC7BBF2B1D51E3E0008D0C58 /* PresentingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentingAnimator.m; sourceTree = "<group>"; };
+		BC7BBF281D51E3E0008D0C58 /* DismissAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissAnimator.h; sourceTree = "<group>"; };
+		BC7BBF291D51E3E0008D0C58 /* DismissAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissAnimator.m; sourceTree = "<group>"; };
+		BC7BBF2A1D51E3E0008D0C58 /* PresentAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentAnimator.h; sourceTree = "<group>"; };
+		BC7BBF2B1D51E3E0008D0C58 /* PresentAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentAnimator.m; sourceTree = "<group>"; };
 		BC7BBF2E1D51E797008D0C58 /* SwipeUpInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeUpInteractiveTransition.h; sourceTree = "<group>"; };
 		BC7BBF2F1D51E797008D0C58 /* SwipeUpInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeUpInteractiveTransition.m; sourceTree = "<group>"; };
 		F1937BA55B3712EFE294B7BE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -203,10 +203,10 @@
 			children = (
 				BC7BBF2E1D51E797008D0C58 /* SwipeUpInteractiveTransition.h */,
 				BC7BBF2F1D51E797008D0C58 /* SwipeUpInteractiveTransition.m */,
-				BC7BBF281D51E3E0008D0C58 /* DismissingAnimator.h */,
-				BC7BBF291D51E3E0008D0C58 /* DismissingAnimator.m */,
-				BC7BBF2A1D51E3E0008D0C58 /* PresentingAnimator.h */,
-				BC7BBF2B1D51E3E0008D0C58 /* PresentingAnimator.m */,
+				BC7BBF281D51E3E0008D0C58 /* DismissAnimator.h */,
+				BC7BBF291D51E3E0008D0C58 /* DismissAnimator.m */,
+				BC7BBF2A1D51E3E0008D0C58 /* PresentAnimator.h */,
+				BC7BBF2B1D51E3E0008D0C58 /* PresentAnimator.m */,
 			);
 			name = Animator;
 			path = YYLView;
@@ -397,9 +397,9 @@
 			files = (
 				BC73FDC31D4AF5B700EA9503 /* XTPopingView.m in Sources */,
 				BC33F6D81D507D0000E0A3FA /* ModelViewController.m in Sources */,
-				BC7BBF2C1D51E3E0008D0C58 /* DismissingAnimator.m in Sources */,
+				BC7BBF2C1D51E3E0008D0C58 /* DismissAnimator.m in Sources */,
 				BC73FD951D4AF4F200EA9503 /* ViewController.m in Sources */,
-				BC7BBF2D1D51E3E0008D0C58 /* PresentingAnimator.m in Sources */,
+				BC7BBF2D1D51E3E0008D0C58 /* PresentAnimator.m in Sources */,
 				BC73FD921D4AF4F200EA9503 /* AppDelegate.m in Sources */,
 				BC73FD8F1D4AF4F200EA9503 /* main.m in Sources */,
 				BC7BBF301D51E797008D0C58 /* SwipeUpInteractiveTransition.m in Sources */,

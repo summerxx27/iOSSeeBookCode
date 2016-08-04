@@ -5,6 +5,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface PresentingAnimator : NSObject <UIViewControllerAnimatedTransitioning>
+@interface DismissAnimator : NSObject <UIViewControllerAnimatedTransitioning>
 
 @end
