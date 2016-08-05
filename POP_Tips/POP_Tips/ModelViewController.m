@@ -7,7 +7,7 @@
 //
 
 #import "ModelViewController.h"
-
+#import "ViewController.h"
 @interface ModelViewController ()
 - (void)addDismissButton;
 - (void)dismiss:(id)sender;
@@ -40,7 +40,10 @@
 
 - (void)dismiss:(id)sender
 {
+    // present
     [self dismissViewControllerAnimated:YES completion:NULL];
+    // push
+//    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

@@ -10,11 +10,11 @@
 #import "XTPopingView.h"
 #import "ModelViewController.h"
 
-#import "DismissingAnimator.h"
-#import "PresentingAnimator.h"
+#import "DismissAnimator.h"
+#import "PresentAnimator.h"
 #import "SwipeUpInteractiveTransition.h"
 
-@interface ViewController ()<UIViewControllerTransitioningDelegate>
+@interface ViewController ()<UIViewControllerTransitioningDelegate, UINavigationControllerDelegate>
 @property (nonatomic, strong) SwipeUpInteractiveTransition *transitionController;
 
 @end
@@ -35,6 +35,15 @@
     
     [self addPresentButton];
 }
+- (id<UIViewControllerAnimatedTransitioning>) navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
+{
+    
+    if (operation == UINavigationControllerOperationPush) {
+        return [PresentAnimator new];
+    }else{
+        return nil;
+    }
+}
 
 #pragma mark - UIViewControllerTransitioningDelegate
 
@@ -42,12 +51,12 @@
                                                                   presentingController:(UIViewController *)presenting
                                                                       sourceController:(UIViewController *)source
 {
-    return [PresentingAnimator new];
+    return [PresentAnimator new];
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
-    return [DismissingAnimator new];
+    return [DismissAnimator new];
 }
 
 #pragma mark - Private Instance methods
@@ -57,23 +66,25 @@
     UIButton *presentButton = [UIButton buttonWithType:UIButtonTypeCustom];
     presentButton.frame = CGRectMake(0, 0, 300, 20);
     presentButton.center = self.view.center;
-    [presentButton setTitle:@"Present Modal View Controller" forState:UIControlStateNormal];
+    [presentButton setTitle:@"Push View Controller" forState:UIControlStateNormal];
     [presentButton setTitleColor:[UIColor colorWithRed:0.2912 green:0.904 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
-    [presentButton addTarget:self action:@selector(present:) forControlEvents:UIControlEventTouchUpInside];
+    [presentButton addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:presentButton];
     
    
 }
 
-- (void)present:(id)sender
+- (void)click:(UIButton *)sender
 {
     ModelViewController *modalViewController = [ModelViewController new];
-    modalViewController.transitioningDelegate = self;
-    modalViewController.modalPresentationStyle = UIModalPresentationCustom;
-    [self.transitionController wireToViewController:modalViewController];
-    [self.navigationController presentViewController:modalViewController
-                                            animated:YES
-                                          completion:NULL];
+//    modalViewController.transitioningDelegate = self;
+//    modalViewController.modalPresentationStyle = UIModalPresentationCustom;
+////    [self.transitionController wireToViewController:modalViewController];
+//    [self presentViewController:modalViewController
+//                                            animated:YES
+//                                          completion:NULL];
+    self.navigationController.delegate = self;
+    [self.navigationController pushViewController:modalViewController animated:YES];
 }
 
 -(id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator {
