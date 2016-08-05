@@ -23,6 +23,7 @@
 		BC7BBF2C1D51E3E0008D0C58 /* DismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7BBF291D51E3E0008D0C58 /* DismissAnimator.m */; };
 		BC7BBF2D1D51E3E0008D0C58 /* PresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7BBF2B1D51E3E0008D0C58 /* PresentAnimator.m */; };
 		BC7BBF301D51E797008D0C58 /* SwipeUpInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7BBF2F1D51E797008D0C58 /* SwipeUpInteractiveTransition.m */; };
+		BC7E95FE1D543E9600C42427 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7E95FD1D543E9600C42427 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		BC7BBF2B1D51E3E0008D0C58 /* PresentAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentAnimator.m; sourceTree = "<group>"; };
 		BC7BBF2E1D51E797008D0C58 /* SwipeUpInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeUpInteractiveTransition.h; sourceTree = "<group>"; };
 		BC7BBF2F1D51E797008D0C58 /* SwipeUpInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeUpInteractiveTransition.m; sourceTree = "<group>"; };
+		BC7E95FC1D543E9600C42427 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		BC7E95FD1D543E9600C42427 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		F1937BA55B3712EFE294B7BE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +160,8 @@
 				BC73FD9B1D4AF4F200EA9503 /* LaunchScreen.storyboard */,
 				BC73FD9E1D4AF4F200EA9503 /* Info.plist */,
 				BC73FD8D1D4AF4F200EA9503 /* Supporting Files */,
+				BC7E95FC1D543E9600C42427 /* RootViewController.h */,
+				BC7E95FD1D543E9600C42427 /* RootViewController.m */,
 			);
 			path = POP_Tips;
 			sourceTree = "<group>";
@@ -400,6 +405,7 @@
 				BC7BBF2C1D51E3E0008D0C58 /* DismissAnimator.m in Sources */,
 				BC73FD951D4AF4F200EA9503 /* ViewController.m in Sources */,
 				BC7BBF2D1D51E3E0008D0C58 /* PresentAnimator.m in Sources */,
+				BC7E95FE1D543E9600C42427 /* RootViewController.m in Sources */,
 				BC73FD921D4AF4F200EA9503 /* AppDelegate.m in Sources */,
 				BC73FD8F1D4AF4F200EA9503 /* main.m in Sources */,
 				BC7BBF301D51E797008D0C58 /* SwipeUpInteractiveTransition.m in Sources */,
